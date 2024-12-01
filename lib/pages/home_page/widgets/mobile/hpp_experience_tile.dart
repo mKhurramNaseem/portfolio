@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 
 class HppExperienceTile extends StatelessWidget {
   const HppExperienceTile({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    double begin = 0, end = 1;
+  Widget build(BuildContext context) {    
     return SliverPadding(
       padding: const EdgeInsets.symmetric(horizontal: 15),
       sliver: SliverToBoxAdapter(
@@ -30,16 +28,11 @@ class HppExperienceTile extends StatelessWidget {
                   ],
                 ),
                 trailing: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      begin = begin == 0 ? 1 : 0;
-                      end = end == 0 ? 1 : 0;
-                    });
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  onTap: () {},
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Icon(
-                      begin == 0 ? Icons.remove : Icons.add,
+                      Icons.remove,
                       color: Colors.white,
                     ),
                   ),
@@ -233,10 +226,7 @@ class HppExperienceTile extends StatelessWidget {
                     ),
                   ],
                 ),
-              ).animate().scaleY(
-                  begin: begin,
-                  end: end,
-                  duration: const Duration(milliseconds: 300)),
+              ),
               const SizedBox(
                 height: 20,
               ),

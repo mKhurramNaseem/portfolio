@@ -14,7 +14,7 @@ class HpFooterTexts extends StatelessWidget {
               flex: 12,
             ),
             Expanded(
-              flex: 45,
+              flex: 38,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -107,16 +107,16 @@ class HpFooterTexts extends StatelessWidget {
               ),
             ),
             const Spacer(
-              flex: 5,
+              flex: 2,
             ),
             Expanded(
-                flex: 60,
+                flex: 48,
                 child: Row(
                   children: [
                     Expanded(
                       flex: 45,
                       child: Container(
-                        color: Colors.pink,
+                        color: Colors.pink.shade200,
                       ),
                     ),
                     Expanded(
@@ -126,13 +126,13 @@ class HpFooterTexts extends StatelessWidget {
                           Expanded(
                             flex: 45,
                             child: Container(
-                              color: Colors.blue,
+                              color: Colors.blue.shade200,
                             ),
                           ),
                           Expanded(
                             flex: 55,
                             child: Container(
-                              color: Colors.purple,
+                              color: Colors.purple.shade200,
                             ),
                           ),
                         ],

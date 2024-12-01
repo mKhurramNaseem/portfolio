@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/home_page/widgets/mobile/hpp_experience_tile.dart';
+import 'package:portfolio/pages/home_page/widgets/hp_space_widget.dart';
 import 'package:portfolio/pages/home_page/widgets/mobile/hpp_expertise_skills.dart';
 import 'package:portfolio/pages/home_page/widgets/mobile/hpp_expertise_text.dart';
 import 'package:portfolio/pages/home_page/widgets/mobile/hpp_filter_texts.dart';
@@ -7,7 +7,6 @@ import 'package:portfolio/pages/home_page/widgets/mobile/hpp_footer_texts.dart';
 import 'package:portfolio/pages/home_page/widgets/mobile/hpp_header_title.dart';
 import 'package:portfolio/pages/home_page/widgets/mobile/hpp_mobile_model.dart';
 import 'package:portfolio/pages/home_page/widgets/mobile/hpp_my_work_detail.dart';
-import 'package:portfolio/pages/home_page/widgets/mobile/hpp_professional_text.dart';
 import 'package:portfolio/pages/home_page/widgets/mobile/hpp_projects_list.dart';
 import 'package:portfolio/pages/home_page/widgets/mobile/hpp_work_test.dart';
 
@@ -50,95 +49,58 @@ class _HomePageMobileState extends State<HomePageMobile> {
             controller: scrollController,
             slivers: const [
               HppHeaderTitle(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 50,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.1,
               ),
               HppExpertiseText(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 30,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.1,
               ),
               HppExpertiseSkills(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 400,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.1,
               ),
               HppWorkTest(),
               HppMyWorkDetail(),
               HppMobileModel(),
+              HpSpaceWidget(
+                heightPercent: 0.05,
+              ),
               HppFilterTexts(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 40,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.05,
               ),
               HppProjectsList(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 80,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.1,
               ),
-              HppProfessionalText(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 20,
-                ),
-              ),
-              HppExperienceTile(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 50,
-                ),
-              ),
+              // HppProfessionalText(),
+              // HpSpaceWidget(
+              //   heightPercent: 0.1,
+              // ),
+              // HppExperienceTile(),
+              // HpSpaceWidget(
+              //   heightPercent: 0.1,
+              // ),
               // HpExperienceTile(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 50,
-                ),
-              ),
               HppAvailableText(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 40,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.05,
               ),
               HppContactText(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 50,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.05,
               ),
               HppEmailText(),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 5,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.02,
               ),
               HppSocialTexts(text: 'Messenger'),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 5,
-                ),
-              ),
               HppSocialTexts(text: 'LinkedIn'),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 5,
-                ),
-              ),
               HppSocialTexts(text: 'Instagram'),
-              SliverToBoxAdapter(
-                child: SizedBox(height: 5),
-              ),
               HppSocialTexts(text: 'Github'),
-              SliverToBoxAdapter(
-                child: SizedBox(
-                  height: 30,
-                ),
+              HpSpaceWidget(
+                heightPercent: 0.05,
               ),
             ],
           ),

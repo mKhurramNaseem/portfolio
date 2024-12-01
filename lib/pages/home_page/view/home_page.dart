@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (MediaQuery.sizeOf(context).width > 700) {
+    if (MediaQuery.sizeOf(context).width > 900) {
       return const HomePageWeb();
     }
     return const HomePageMobile();

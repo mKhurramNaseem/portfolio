@@ -7,7 +7,7 @@ class HppMyWorkDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(20.0),
         child: Text(
           'Deployed scalable travel, event and telemedicine web and hybrid mobile apps using Flutter and Dart.\nCollaborated in 140+ projects with 50+ clients all around the world. I am also interested in data analytics and visualization.',
           maxLines: 10,

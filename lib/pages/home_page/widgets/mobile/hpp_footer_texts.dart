@@ -6,14 +6,17 @@ class HppAvailableText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
-      child: Text(
-        'Available for select freelance opportunities',
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          letterSpacing: 2,
-          color: Colors.white,
-          fontSize: MediaQuery.sizeOf(context).height * 0.035,
-          fontWeight: FontWeight.bold,
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Text(
+          'Available for select freelance opportunities',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            letterSpacing: 2,
+            color: Colors.white,
+            fontSize: MediaQuery.sizeOf(context).height * 0.035,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
@@ -26,7 +29,7 @@ class HppContactText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
-      padding: const EdgeInsets.symmetric(horizontal: 15.0),
+      padding: const EdgeInsets.symmetric(horizontal: 20.0),
       sliver: SliverToBoxAdapter(
         child: Text(
           'Have an exciting project you need to help with?\nSend me email or contact me via instant message!',
@@ -55,7 +58,6 @@ class HppEmailText extends StatelessWidget {
           letterSpacing: 2,
           color: Colors.white,
           fontSize: MediaQuery.sizeOf(context).height * 0.035,
-          fontStyle: FontStyle.italic,
           decoration: TextDecoration.underline,
           decorationColor: Colors.white,
           fontWeight: FontWeight.bold,

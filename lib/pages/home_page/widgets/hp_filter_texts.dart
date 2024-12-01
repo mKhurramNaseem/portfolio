@@ -5,27 +5,32 @@ class HpFilterTexts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SliverToBoxAdapter(
-      child: Row(
-        children: [
-          Spacer(
-            flex: 12,
-          ),
-          Expanded(
-            flex: 76,
-            child: Text(
-              'Filter by All / Data Visualization / Web Development',
-              maxLines: 10,
-              style: TextStyle(
-                  fontSize: 15.0,
-                  color: Colors.grey,
-                  fontWeight: FontWeight.w800),
+    return SliverToBoxAdapter(
+      child: SizedBox(
+        height: MediaQuery.sizeOf(context).height * 0.05,
+        child: Row(
+          children: [
+            const Spacer(
+              flex: 12,
             ),
-          ),
-          Spacer(
-            flex: 12,
-          ),
-        ],
+            Expanded(
+              flex: 76,
+              child: LayoutBuilder(builder: (context, constraints) {
+                return Text(
+                  'Filter by All / Data Visualization / Web Development',
+                  maxLines: 10,
+                  style: TextStyle(
+                      fontSize: constraints.maxHeight * 0.5,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w800),
+                );
+              }),
+            ),
+            const Spacer(
+              flex: 12,
+            ),
+          ],
+        ),
       ),
     );
   }

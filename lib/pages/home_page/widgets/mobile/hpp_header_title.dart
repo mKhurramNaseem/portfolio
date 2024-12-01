@@ -30,7 +30,7 @@ class HppHeaderTitle extends StatelessWidget {
                           ],
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
-                          stops: [0.6, 1.0],
+                          stops: [0.2, 1.0],
                         ),
                       ),
                     ),
@@ -39,31 +39,36 @@ class HppHeaderTitle extends StatelessWidget {
               ),
             ),
             Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    'KHURAM NASEEM',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: MediaQuery.sizeOf(context).height * 0.055,
-                      letterSpacing: 6,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    FittedBox(
+                      child: Text(
+                        'KHURAM NASEEM',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: MediaQuery.sizeOf(context).height * 0.055,
+                          letterSpacing: 6,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
-                  ),
-                  Text(
-                    'SOFTWARE ENGINEER, FRONT END & APP DEVELOPER. ',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: MediaQuery.sizeOf(context).height * 0.02,
-                      letterSpacing: 6,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
+                    Text(
+                      'SOFTWARE ENGINEER, FRONT END & APP DEVELOPER. ',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: MediaQuery.sizeOf(context).height * 0.02,
+                        letterSpacing: 6,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             )
           ],

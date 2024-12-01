@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_3d_controller/flutter_3d_controller.dart';
 
 class HpWorkText extends StatelessWidget {
   const HpWorkText({super.key});
@@ -15,7 +14,7 @@ class HpWorkText extends StatelessWidget {
               flex: 12,
             ),
             Expanded(
-              flex: 45,
+              flex: 40,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -37,7 +36,7 @@ class HpWorkText extends StatelessWidget {
                     flex: 10,
                   ),
                   Expanded(
-                    flex: 65,
+                    flex: 70,
                     child: Align(
                       alignment: Alignment.topCenter,
                       child: Text(
@@ -55,15 +54,17 @@ class HpWorkText extends StatelessWidget {
               ),
             ),
             const Spacer(
-              flex: 8,
+              flex: 3,
             ),
-            const Expanded(
-              flex: 35,
+            Expanded(
+              flex: 40,
               child: Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Flutter3DViewer(
-                    src: 'assets/models_3d/low_poly_mobile_phone.glb'),
+                padding: const EdgeInsets.all(10.0),
+                child: Image.asset('assets/images/robot.png'),
               ),
+            ),
+            const Spacer(
+              flex: 5,
             ),
           ],
         ),

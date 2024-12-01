@@ -29,7 +29,7 @@ class HppProjectsList extends StatelessWidget {
                         Expanded(
                           child: Image.asset(
                             'assets/images/bg_single_sided.jpg',
-                            fit: BoxFit.fill,
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ],
